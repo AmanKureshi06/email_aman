@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Redirecting...</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+<div class="container">
+    <h1>Redirecting...</h1>
+    <p>If you are not redirected, <a href="https://amankureshi.com">click here</a>.</p>
+
+    <script>
+        // Replace 'https://example.com' with the URL you want to redirect to
+        var redirectUrl = 'https://example.com';
+
+        function redirectTo() {
+            window.location.href = redirectUrl;
+        }
+
+        // Redirect after 5 seconds
+        setTimeout(redirectTo, 5000);
+    </script>
+</div>
+
 </body>
 </html>
